@@ -1,0 +1,82 @@
+openapi: 3.0.0
+info:
+  title: Validator Service
+  version: 0.0.0
+tags: []
+paths:
+  /validate/{validator}:
+    post:
+      operationId: Validator_validate
+      parameters:
+        - name: validator
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The request has succeeded.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidDocument'
+        '400':
+          description: The server could not understand the request due to invalid syntax.
+          content:
+            application/json:
+              schema:
+                anyOf:
+                  - $ref: '#/components/schemas/InvalidDocument'
+                  - $ref: '#/components/schemas/GenericError'
+        '404':
+          description: The server cannot find the requested resource.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidatorNotFound'
+components:
+  schemas:
+    GenericError:
+      type: object
+      required:
+        - error
+        - message
+      properties:
+        error:
+          type: boolean
+          default: true
+        message:
+          type: string
+    InvalidDocument:
+      type: object
+      required:
+        - valid
+        - reason
+      properties:
+        valid:
+          type: boolean
+          default: false
+        reason:
+          type: string
+          minLength: 1
+    ValidDocument:
+      type: object
+      required:
+        - valid
+      properties:
+        valid:
+          type: boolean
+          default: true
+      description: ''
+    ValidatorNotFound:
+      type: object
+      required:
+        - error
+        - message
+      properties:
+        error:
+          type: boolean
+          default: true
+        message:
+          type: string
+      description: ''

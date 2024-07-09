@@ -25,6 +25,8 @@ Generate code:
 ## Links
 
 * [TypeSpec playground]
+* [Issue]
 
 
 [TypeSpec playground]: https://typespec.io/playground?c=aW1wb3J0ICJAdHlwZXNwZWMvaHR0cCI7Cgp1c2luZyBUeXBlU3BlYy5IdHRwOwpAc2VydmljZSh7CiAgdGl0bGU6ICJWYWxpZGF0b3IgU8YeIiwKfSkKbmFtZXNwYWNlIERlbW%2FHGzsKCm1vZGVsIMU1RG9jdW1lbnQgaXMgUmVzcG9uc2U8MjAwPiDEYHbEIzogYm9vbGVhbiA9IHRydWU7Cn3IQ0luxSLJRdU0ZmFsc2U7CiAgQG1pbkxlbmd0aCgxKSByZWFzb246IHN0cmluZ8tVR2VuZXJpY0Vycm9yxVJlxArMUuYAhiAgbWVzc2FnZdNE6QERTm90Rm91bmTtAOA0MDTmAODfWs5aQHJvdXRlKCIv5QDiYXRlIikKaW50ZXJm5AFiyXLFWcgse8csb3J9IinEGHBvc3ToASVhdGUoQHBhdGjID%2BQAjMZxKTrvAZ988wDTfMVrICBAc3RhdHVzQ29kZSBfOiA0MDDkAMMgIEBib2R5IHLnAPY68QGufO0Ba8Q0feQA6Q%3D%3D&e=%40typespec%2Fopenapi3&options=%7B%22linterRuleSet%22%3A%7B%22extends%22%3A%5B%22%40typespec%2Fhttp%2Fall%22%5D%7D%7D
+[Issue]: https://github.com/oapi-codegen/oapi-codegen/issues/1122
